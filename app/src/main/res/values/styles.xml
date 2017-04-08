@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <declare-styleable name="MediaSeekBar">
+        <attr name="hasPlayColor" format="color|reference" />
+        <attr name="originBackgroundColor" format="color|reference" />
+        <attr name="hasBufferColor" format="color|reference" />
+        <attr name="maxProgress" format="integer|reference" />
+        <attr name="progressWidth" format="dimension|reference" />
+        <attr name="customThumb" format="reference" />
+        <attr name="canClickProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SToolBar">
+        <attr name="showTitle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <!---->
+    <style name="dialog_animation_frombottom" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/anim_dialog_enter_formbottom</item>
+        <item name="@android:windowExitAnimation">@anim/anim_dialog_exit_formbottom</item>
+    </style>
+
+    <style name="window_right_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/anim_window_right_entry</item>
+        <item name="@android:windowExitAnimation">@anim/anim_window_right_exit</item>
+    </style>
+
+    <style name="viewClickRipple">
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="fresco_base_config">
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+
+</resources>
